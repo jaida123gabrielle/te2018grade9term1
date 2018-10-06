@@ -6,7 +6,9 @@ console.log(message);
  let BdayMonth = 12;
  let FavoriteNumber = 2;
  let MyGPA = 4.0;
- console. log(Bday)
+ console. log(BdayMonth);
+ console. log(FavoriteNumber);
+ console. log(MyGPA);
 
  let message2 = "We the people";
  let message3 = "We matter";
