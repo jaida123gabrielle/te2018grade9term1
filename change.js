@@ -9,26 +9,34 @@ const READLINE = require('readline-sync');
 let numOfPennies = READLINE.question("Please cents as a positive integer");
 
 console.log(numOfPennies);
+let remainder = (undefined);
 
 
 
 // declare, assign, and print how many quarters you can make out of the pennies
-let quarters = Math.floor(numOfPennies/25)
-
+let quarters = Math.floor(numOfPennies/25);
 console.log(quarters,"QUARTERS");
-
-
+remainder = numOfPennies % 25;
 
 
 // declare, assign, and print how many dimes you can make out of the pennies
+let dimes = Math.floor(remainder/10);
+
+console.log(dimes, "DIMES");
+
+remainder = remainder%10;
 
 
 
 
 
 // declare, assign, and print how many nickels you can make out of the pennies
+let nickels = Math.floor(remainder/5);
+console.log(nickels, "NICKELS");
+remainder = remainder%5;
 
-
+let pennies = Math.floor(remainder/1);
+console.log(pennies);
 
 
 
@@ -38,6 +46,15 @@ console.log(quarters,"QUARTERS");
 
 
 
+let changeDrawer = {
+  quarters: quarters,
+  dimes: dimes,
+  nickels: nickels,
+  pennies: pennies,
+};
+
+
+console.log(changeDrawer);
 // make a change drawer using an object to
 // store all of your change
 // each property on the object should represent the particular coin
