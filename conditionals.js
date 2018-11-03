@@ -20,10 +20,14 @@ if (age >= 18) {
 // However, if it is thunderstorming, you should not bring an umbrella since
 // that's bad luck. Write code that prints if someone should bring an umbrella
 // with them.
-//console.log("*** Problem 2: Umbrella ***");
-//let raining = READLINE.question("Is it raining? (yes or no): ");
-//let thunderstorming = READLINE.question("Is it thunderstorming? (yes or no): ");
-
+console.log("*** Problem 2: Umbrella ***");
+let raining = READLINE.question("Is it raining? (yes or no): ");
+let thunderstorming = READLINE.question("Is it thunderstorming? (yes or no): ");
+if (raining == "yes") {
+    console.log("You should bring an umbrella");
+if (thunderstorming == "yes") {
+    console.log("You should NOT bring an umbrella");
+}
 
 // **** Problem 3: Monkey Trouble ****
 // There are two monkeys: Bubbles and Spankey. You are in trouble if both of
