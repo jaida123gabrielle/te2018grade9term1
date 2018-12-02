@@ -20,6 +20,7 @@ let enterHouse = READLINE.question("Will you enter the house? (yes or no) ");
 if(enterHouse == "y" || enterHouse == "yes") {
   player.courage++;
   console.log(`${player.name} prepares their ${player.weapon} and opens the door...`);
+  let e
   // continue the story
 
 } else {

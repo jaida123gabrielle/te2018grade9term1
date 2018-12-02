@@ -1,4 +1,4 @@
-const READLINE = require("readline-sync");
+ const READLINE = require("readline-sync");
 
 // use whatever properties you want for the player object
 let player = {
