@@ -17,11 +17,17 @@ player.name = READLINE.question("What is your name?: ");
 console.log(`${player.name} stands in front of a spooky haunted house.`);
 console.log(`${player.name} hears what sounds like screaming coming from inside the house.`);
 let enterHouse = READLINE.question("Will you enter the house? (yes or no) ");
-if(enterHouse == "y" || enterHouse == "yes") {
-  player.courage++;
-  console.log(`${player.name} prepares their ${player.weapon} and opens the door...`);
-  let e
-  // continue the story
+    if(enterHouse == "y" || enterHouse == "yes") {
+        player.courage++;
+             console.log(`${player.name} prepares their ${player.weapon} and opens the door...`);
+  let enterHouse = READLINE.question("Will you walk upstairs towards the creaking noises? (yes or no)");
+      if(enterHouse == "y" || enterHouse == "yes")
+          player.courage++;
+            console.log(`${player.name} walks up the stairs in the darkness towards the undetermined creeking noises ...`);
+              console.log(`${player.name} reaches the top of the stairs and hears mumbled voices from behind a door`);
+                 let enterHouse = READLINE.question("Will you open the door? (yes or no) ");
+                      if(enterHouse = "y" || enterHouse == "yes")
+                          player.courage++;
 
 } else {
   player.intellect++;
