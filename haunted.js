@@ -37,11 +37,11 @@ let enterHouse = READLINE.question("You hear creaking noises coming from upstair
                                                     player.courage--;
                                                         console.log(`${player.name} opens the door to find a room full of R&B cds and a stereo, ${player.name} ends her/his quest to indulge `);
 
-                                                            else {
-                                                              if(enterHouse == 2)
-                                                               player.courage++;
+                                                      } else if (enterHouse == 2)
+                                                                player.courage++;
                                                                     console.log(`${player.name} opens the door and finds a baby all alone crying profusely,${player.name} ends the quest to console the child and care for it, until she (or he) can safely return the baby to its parents`);
-                                                                  }
+
+                                                                  
 //} else {
   //player.intellect++;
   //console.log(`${player.name} decides not to open the door. However...`);
